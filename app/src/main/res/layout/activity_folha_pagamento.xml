@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.FolhaPagamentoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        android:padding="5dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/preto"
+            android:padding="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/branco">
+
+                <TextView
+                    android:id="@+id/txtEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Gateway"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha1"
+                    app:layout_constraintStart_toEndOf="@+id/lblEmpresa"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblRecibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="RECIBO DE PAGAMENTO MENSAL"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtMesAno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="NOVEMBRO/2020"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha1"
+                    app:layout_constraintEnd_toEndOf="@+id/lblRecibo"
+                    app:layout_constraintStart_toStartOf="@+id/lblRecibo"
+                    app:layout_constraintTop_toBottomOf="@+id/lblRecibo" />
+
+                <TextView
+                    android:id="@+id/lblLinha1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtMesAno" />
+
+                <TextView
+                    android:id="@+id/txtNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Gabriel da Silva"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha2"
+                    app:layout_constraintStart_toEndOf="@+id/lblNome"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha1" />
+
+                <TextView
+                    android:id="@+id/lblAdmissao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="ADMISSÃO:"
+                    app:layout_constraintEnd_toStartOf="@+id/txtAdmissao"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha1" />
+
+                <TextView
+                    android:id="@+id/txtAdmissao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:text="15/10/2019"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha1" />
+
+                <TextView
+                    android:id="@+id/lblLinha2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+                <TextView
+                    android:id="@+id/lblDescricao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Descrição"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha2" />
+
+                <TextView
+                    android:id="@+id/lblReferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Referência"
+                    app:layout_constraintStart_toEndOf="@+id/lblDescricao"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha2" />
+
+                <TextView
+                    android:id="@+id/lblVencimentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="75dp"
+                    android:layout_marginRight="75dp"
+                    android:text="Vencimentos"
+                    app:layout_constraintEnd_toStartOf="@+id/lblDescontos"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha2" />
+
+                <TextView
+                    android:id="@+id/lblDescontos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:text="Descontos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha2" />
+
+                <TextView
+                    android:id="@+id/lblSalario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="SALÁRIO"
+                    app:layout_constraintStart_toStartOf="@+id/lblDescricao"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDescricao" />
+
+                <TextView
+                    android:id="@+id/txtDias_trabalhados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="30,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblReferencia"
+                    app:layout_constraintTop_toBottomOf="@+id/lblReferencia" />
+
+                <TextView
+                    android:id="@+id/txtSalario_bruto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="R$ 1527,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblVencimentos"
+                    app:layout_constraintTop_toBottomOf="@+id/lblVencimentos" />
+
+                <TextView
+                    android:id="@+id/lblFaltas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="FALTAS"
+                    app:layout_constraintStart_toStartOf="@+id/lblSalario"
+                    app:layout_constraintTop_toBottomOf="@+id/lblSalario" />
+
+                <TextView
+                    android:id="@+id/txtFaltas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="2,00"
+                    app:layout_constraintEnd_toEndOf="@+id/txtDias_trabalhados"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDias_trabalhados" />
+
+                <TextView
+                    android:id="@+id/txtValor_Faltas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="R$ 150,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblDescontos"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDescontos" />
+
+                <TextView
+                    android:id="@+id/lblDsr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="FALTAS DSR"
+                    app:layout_constraintStart_toStartOf="@+id/lblFaltas"
+                    app:layout_constraintTop_toBottomOf="@+id/lblFaltas" />
+
+                <TextView
+                    android:id="@+id/txtDsr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="1,00"
+                    app:layout_constraintEnd_toEndOf="@+id/txtFaltas"
+                    app:layout_constraintTop_toBottomOf="@+id/txtFaltas" />
+
+                <TextView
+                    android:id="@+id/txtValor_Dsr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="R$ 75,00"
+                    app:layout_constraintEnd_toEndOf="@+id/txtValor_Faltas"
+                    app:layout_constraintTop_toBottomOf="@+id/txtValor_Faltas" />
+
+                <TextView
+                    android:id="@+id/lblInss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="INSS"
+                    app:layout_constraintStart_toStartOf="@+id/lblDsr"
+                    app:layout_constraintTop_toBottomOf="@+id/lblDsr" />
+
+                <TextView
+                    android:id="@+id/txtValor_Inss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="R$ 121,22"
+                    app:layout_constraintEnd_toEndOf="@+id/lblDescontos"
+                    app:layout_constraintTop_toTopOf="@+id/lblInss" />
+
+                <TextView
+                    android:id="@+id/lblNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="NOME:"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha1" />
+
+                <TextView
+                    android:id="@+id/lblEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="EMPRESA:"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ITAPETININGA - SP"
+                    app:layout_constraintBottom_toTopOf="@+id/lblLinha1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblLinha3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblInss" />
+
+                <TextView
+                    android:id="@+id/lblTotal_Vencimentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Total Vencimentos"
+                    app:layout_constraintEnd_toEndOf="@+id/txtSalario_bruto"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha3" />
+
+                <TextView
+                    android:id="@+id/lblTotal_Descontos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Total Descontos"
+                    app:layout_constraintEnd_toEndOf="@+id/txtValor_Inss"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha3" />
+
+                <TextView
+                    android:id="@+id/txtTotal_Vencimentos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 1527,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblTotal_Vencimentos"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTotal_Vencimentos" />
+
+                <TextView
+                    android:id="@+id/txtTotal_Descontos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 346,22"
+                    app:layout_constraintEnd_toEndOf="@+id/lblTotal_Descontos"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTotal_Descontos" />
+
+                <TextView
+                    android:id="@+id/lblTotal_Liquido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Total Liquido -->"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTotal_Vencimentos"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTotal_Vencimentos" />
+
+                <TextView
+                    android:id="@+id/txtTotal_Liquido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 1180,70"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTotal_Descontos"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTotal_Descontos" />
+
+                <TextView
+                    android:id="@+id/lblLinha4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTotal_Liquido" />
+
+                <TextView
+                    android:id="@+id/lblSalario_Base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Salario Base"
+                    app:layout_constraintStart_toStartOf="@+id/lblInss"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha4" />
+
+                <TextView
+                    android:id="@+id/txtSalario_Base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 1527,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblSalario_Base"
+                    app:layout_constraintStart_toStartOf="@+id/lblSalario_Base"
+                    app:layout_constraintTop_toBottomOf="@+id/lblSalario_Base" />
+
+                <TextView
+                    android:id="@+id/lblBase_Inss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Sal.Contr.INSS"
+                    app:layout_constraintStart_toEndOf="@+id/lblSalario_Base"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha4" />
+
+                <TextView
+                    android:id="@+id/txtBase_Inss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 1527,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblBase_Inss"
+                    app:layout_constraintStart_toStartOf="@+id/lblBase_Inss"
+                    app:layout_constraintTop_toBottomOf="@+id/lblBase_Inss" />
+
+                <TextView
+                    android:id="@+id/lblBase_Fgts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Base Calculo FGTS"
+                    app:layout_constraintEnd_toStartOf="@+id/lblFgts"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha4" />
+
+                <TextView
+                    android:id="@+id/txtBase_Fgts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="R$ 1527,00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/lblBase_Fgts"
+                    app:layout_constraintStart_toStartOf="@+id/lblBase_Fgts"
+                    app:layout_constraintTop_toBottomOf="@+id/lblBase_Fgts" />
+
+                <TextView
+                    android:id="@+id/lblFgts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:text="FGTS do MES"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTotal_Liquido"
+                    app:layout_constraintTop_toBottomOf="@+id/lblLinha4" />
+
+                <TextView
+                    android:id="@+id/txtFgts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 240,00"
+                    app:layout_constraintEnd_toEndOf="@+id/lblFgts"
+                    app:layout_constraintStart_toStartOf="@+id/lblFgts"
+                    app:layout_constraintTop_toBottomOf="@+id/lblFgts" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

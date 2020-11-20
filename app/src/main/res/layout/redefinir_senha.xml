@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorFundo"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtRedefinirSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/txtDigiteEmail"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtRedefinirSenha"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/branco"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/edtEmail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/txtRedefinirSenha"
+        android:drawableLeft="@drawable/ic_email" />
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btnRedefinir"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:nb_text="@string/btnRedefinir"
+        app:nb_borderColor="@color/branco"
+        app:nb_borderWidth="0dp"
+        app:nb_backgroundColor="@color/colorPrimary"
+        app:nb_focusColor="@color/colorAccent"
+        app:nb_textColor="@color/branco"
+        app:nb_radius="40dp"
+        app:nb_textSize="20sp"
+        app:nb_textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/edtRedefinirSenha"/>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btnCancelar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/btnRedefinir"
+        app:nb_backgroundColor="@android:color/transparent"
+        app:nb_borderColor="@color/colorPrimary"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="@color/colorPrimary"
+        app:nb_radius="40dp"
+        app:nb_textStyle="bold"
+        app:nb_text="@string/btnCancelar"
+        app:nb_textColor="@color/colorPrimary"
+        app:nb_textSize="20sp" />
+
+</RelativeLayout>

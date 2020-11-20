@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4381a1</color>
+    <color name="colorPrimaryDark">#005572</color>
+    <color name="colorAccent">#75B0D2</color>
+    <color name="colorFundo">#F1F7FB</color>
+
+    <color name="preto">#000000</color>
+    <color name="preto50">#777777</color>
+    <color name="preto25">#B3B3B3</color>
+    <color name="preto10">#D7D7D7</color>
+
+    <color name="branco">#ffffff</color>
+
+    <color name="um">#E05955</color>
+    <color name="um50">#F0ACAA</color>
+    <color name="um25">#F7D6D5</color>
+    <color name="um10">#FCEFEE</color>
+
+    <color name="dois">#DD8B54</color>
+    <color name="dois50">#E6BDA1</color>
+    <color name="dois25">#EAD6C8</color>
+    <color name="dois10">#ECE4DF</color>
+
+    <color name="tres">#75B0D2</color>
+    <color name="tres50">#BAD8E9</color>
+    <color name="tres25">#DDEBF4</color>
+    <color name="tres10">#F1F7FB</color>
+
+    <color name="quatro">#DD6596</color>
+    <color name="quatro50">#EEB2CB</color>
+    <color name="quatro25">#F7D9E5</color>
+    <color name="quatro10">#FCF0F5</color>
+
+    <color name="cinco">#72D3B4</color>
+    <color name="cinco50">#B9E9DA</color>
+    <color name="cinco25">#DCF4EC</color>
+    <color name="cinco10">#F1FBF8</color>
+
+    <color name="ntbCor">#005572</color>
+
+    <color name="odois">#F9BB72</color>
+    <color name="odois50">#FCDDB9</color>
+    <color name="odois25">#FEEEDC</color>
+    <color name="odois10">#FEF8F1</color>
+</resources>

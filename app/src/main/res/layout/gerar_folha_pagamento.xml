@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFundo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtGerarFolhaPagamento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/txtGerarFolhaPagamento"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtMes"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtGerarFolhaPagamento"
+        android:layout_marginTop="16dp"
+        android:background="@color/branco"
+        android:drawableStart="@drawable/ic_calendario"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/edtMes"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAno"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/edtMes"
+        android:layout_marginTop="16dp"
+        android:background="@color/branco"
+        android:drawableStart="@drawable/ic_calendario"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/edtAno"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtFaltas"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/edtAno"
+        android:layout_marginTop="16dp"
+        android:background="@color/branco"
+        android:drawableStart="@drawable/ic_nome"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/edtFaltas"
+        android:inputType="number"
+        android:maxLength="2"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlSemanas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/edtFaltas">
+
+    <TextView
+        android:id="@+id/txtSemanas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/txtSemanas"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgSemanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSemanas"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rb1Semana" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb2Semana" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb3Semana" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb4Semana" />
+
+    </RadioGroup>
+    </RelativeLayout>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btnConfirmar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rlSemanas"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:nb_backgroundColor="@color/colorPrimary"
+        app:nb_borderColor="@color/branco"
+        app:nb_borderWidth="0dp"
+        app:nb_focusColor="@color/colorAccent"
+        app:nb_radius="40dp"
+        app:nb_text="@string/btnConfirmar"
+        app:nb_textColor="@color/branco"
+        app:nb_textSize="20sp"
+        app:nb_textStyle="bold" />
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btnCancelar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnConfirmar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:nb_backgroundColor="@android:color/transparent"
+        app:nb_borderColor="@color/colorPrimary"
+        app:nb_borderWidth="2dp"
+        app:nb_focusColor="@color/colorPrimary"
+        app:nb_radius="40dp"
+        app:nb_text="@string/btnCancelar"
+        app:nb_textColor="@color/colorPrimary"
+        app:nb_textSize="20sp"
+        app:nb_textStyle="bold" />
+
+</RelativeLayout>

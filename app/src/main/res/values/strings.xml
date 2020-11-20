@@ -1,0 +1,71 @@
+<resources>
+
+    //Idioma: Português
+
+    //act
+    <string name="app_name">Folha de Pagamento</string>
+
+    //txt
+    <string name="txtEsqueciSenha">ESQUECI MINHA SENHA</string>
+    <string name="txtDigiteEmail">Digite seu e-mail para redefinir sua senha:</string>
+    <string name="txtGerarFolhaPagamento">Selecione o mês / ano:</string>
+    <string name="txtCarregando">Carregando...</string>
+    <string name="txtSemanas">Informe em quantas semanas ocorreram as faltas:\n(Informação necessária para cálculo do DSR)</string>
+
+    //err
+    <string name="errCampoVazio">Campo vazio</string>
+    <string name="errEmailInvalido">E-mail inválido</string>
+    <string name="errEmailExistente">E-mail já cadastrado!</string>
+    <string name="errEmailInexistente">E-mail não cadastrado!</string>
+    <string name="errSenhasDiferentes">Senhas não conferem!</string>
+    <string name="errSenhaInvalida">Senha deve conter no mínimo 6 caracteres!</string>
+    <string name="errMesInvalido">Mês inválido!</string>
+    <string name="errAnoInvalido">Ano inválido!</string>
+    <string name="errFaltasInvalido">Quantidade de dias inválido!</string>
+
+
+    //snk
+    <string name="snkEmailSenhaInvalidos">Email e/ou senha inválidos!</string>
+    <string name="snkVerificarEmail">Cadastro efetuado. Por favor, verifique seu e-mail!</string>
+    <string name="snkEmailNaoVerificado">E-mail não verificado! Por favor, verifique seu e-mail!</string>
+    <string name="snkCadastroAlterado">Cadastro alterado com sucesso!</string>
+
+    //tst
+    <string name="tstEmailEnviado">E-mail enviado com sucesso!</string>
+
+    //btn
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnSair">SAIR</string>
+    <string name="btnPerfil">PERFIL</string>
+    <string name="btnGerarFolhaPagamento">GERAR FOLHA PAGAMENTO</string>
+    <string name="btnConsultarFolhaPagamento">CONSULTAR FOLHA PAGAMENTO</string>
+    <string name="btnCadastrar">CADASTRAR</string>
+    <string name="btnRedefinir">REDEFINIR</string>
+    <string name="btnConfirmar">CONFIRMAR</string>
+    <string name="btnLimpar">LIMPAR</string>
+    <string name="btnCancelar">CANCELAR</string>
+    <string name="btnAlterar">ALTERAR</string>
+
+    //edt
+    <string name="edtEmpresa">Informe o nome da Empresa</string>
+    <string name="edtData">Informe a data de admissão</string>
+    <string name="edtSalario">Informe seu salário bruto</string>
+    <string name="edtEmail">Informe seu e-mail</string>
+    <string name="edtNome">Digite seu nome</string>
+    <string name="edtSenha">Informe sua senha</string>
+    <string name="edtConfirmar_senha">Confirme sua senha</string>
+    <string name="edtAlterarNome">Altere seu nome</string>
+    <string name="edtAlterarEmpresa">Altere o nome da Empresa</string>
+    <string name="edtAlterarData">Altere a data de admissão</string>
+    <string name="edtAlterarSalario">Altere seu salário bruto</string>
+    <string name="edtSenhaAtual">Senha atual</string>
+    <string name="edtMes">Informe o mês</string>
+    <string name="edtAno">Informe o ano</string>
+    <string name="edtFaltas">Quantidade de faltas</string>
+
+    //rb
+    <string name="rb1Semana">1 Semana</string>
+    <string name="rb2Semana">2 Semanas</string>
+    <string name="rb3Semana">3 Semanas</string>
+    <string name="rb4Semana">4 Semanas</string>
+</resources>

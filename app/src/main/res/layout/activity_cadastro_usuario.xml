@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context=".Activitys.CadastroUsuarioActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_nome"
+                android:ems="10"
+                android:hint="@string/edtNome"
+                android:inputType="textAutoComplete"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:drawableLeft="@drawable/ic_nome" />
+
+            <EditText
+                android:id="@+id/edtEmpresa"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_empresa"
+                android:ems="10"
+                android:hint="@string/edtEmpresa"
+                android:inputType="textAutoComplete"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtNome"
+                android:drawableLeft="@drawable/ic_empresa" />
+
+            <EditText
+                android:id="@+id/edtData"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/ic_calendario"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/edtData"
+                android:inputType="date"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmpresa"
+                android:drawableLeft="@drawable/ic_calendario" />
+
+            <EditText
+                android:id="@+id/edtSalario"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_salario"
+                android:ems="10"
+                android:hint="@string/edtSalario"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtData"
+                android:drawableLeft="@drawable/ic_salario" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_email"
+                android:ems="10"
+                android:hint="@string/edtEmail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtSalario"
+                android:drawableLeft="@drawable/ic_email" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_senha"
+                android:ems="10"
+                android:hint="@string/edtSenha"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+                android:drawableLeft="@drawable/ic_senha" />
+
+            <EditText
+                android:id="@+id/edtConfirmar_senha"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_senha"
+                android:ems="10"
+                android:hint="@string/edtConfirmar_senha"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtSenha"
+                android:drawableLeft="@drawable/ic_senha" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btnConfirmar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                app:nb_text="@string/btnConfirmar"
+                app:nb_borderColor="@color/branco"
+                app:nb_borderWidth="0dp"
+                app:nb_backgroundColor="@color/colorPrimary"
+                app:nb_focusColor="@color/colorAccent"
+                app:nb_textColor="@color/branco"
+                app:nb_radius="40dp"
+                app:nb_textSize="20sp"
+                app:nb_textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtConfirmar_senha"/>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnConfirmar"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_borderColor="@color/colorPrimary"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="@color/colorPrimary"
+                app:nb_radius="40dp"
+                app:nb_textStyle="bold"
+                app:nb_text="@string/btnLimpar"
+                app:nb_textColor="@color/colorPrimary"
+                app:nb_textSize="20sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

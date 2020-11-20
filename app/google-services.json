@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "864358043233",
+    "firebase_url": "https://folha-de-pagamento-24b22.firebaseio.com",
+    "project_id": "folha-de-pagamento-24b22",
+    "storage_bucket": "folha-de-pagamento-24b22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864358043233:android:42e16d3350069444bd2420",
+        "android_client_info": {
+          "package_name": "com.example.folhadepagamento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864358043233-1utr7mic03u5s6tnd0g2senl200qisnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.folhadepagamento",
+            "certificate_hash": "3b33f1b75c63f2de39ddad5caab51f2c08198346"
+          }
+        },
+        {
+          "client_id": "864358043233-n99taib0big3ltu1k981mjfl2auqfd3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNUdBInn8lc7jwE7jYs-CnZ_XTp5vnw4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864358043233-n99taib0big3ltu1k981mjfl2auqfd3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

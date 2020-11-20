@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    tools:context=".Activitys.ConsultaPerfilActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtAlterarNome"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_nome"
+                android:ems="10"
+                android:hint="@string/edtAlterarNome"
+                android:inputType="textAutoComplete"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:drawableLeft="@drawable/ic_nome" />
+
+            <EditText
+                android:id="@+id/edtAlterarEmpresa"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_empresa"
+                android:ems="10"
+                android:hint="@string/edtAlterarEmpresa"
+                android:inputType="textAutoComplete"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAlterarNome"
+                android:drawableLeft="@drawable/ic_empresa" />
+
+            <EditText
+                android:id="@+id/edtAlterarData"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/ic_calendario"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="@string/edtAlterarData"
+                android:inputType="date"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAlterarEmpresa"
+                android:drawableLeft="@drawable/ic_calendario" />
+
+            <EditText
+                android:id="@+id/edtAlterarSalario"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_salario"
+                android:ems="10"
+                android:hint="@string/edtAlterarSalario"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAlterarData"
+                android:drawableLeft="@drawable/ic_salario" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/branco"
+                android:drawableStart="@drawable/ic_email"
+                android:ems="10"
+                android:hint="@string/edtEmail"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAlterarSalario"
+                android:drawableLeft="@drawable/ic_email" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btnAlterar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+                app:nb_backgroundColor="@color/colorPrimary"
+                app:nb_borderColor="@color/branco"
+                app:nb_borderWidth="0dp"
+                android:layout_marginTop="32dp"
+                app:nb_focusColor="@color/colorAccent"
+                app:nb_radius="40dp"
+                app:nb_text="@string/btnAlterar"
+                app:nb_textColor="@color/branco"
+                app:nb_textSize="20sp"
+                app:nb_textStyle="bold" />
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/btnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAlterar"
+                app:nb_backgroundColor="@android:color/transparent"
+                app:nb_borderColor="@color/colorPrimary"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="@color/colorPrimary"
+                app:nb_radius="40dp"
+                app:nb_textStyle="bold"
+                app:nb_text="@string/btnCancelar"
+                app:nb_textColor="@color/colorPrimary"
+                app:nb_textSize="20sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
